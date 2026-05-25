@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: fsvisual
-  version: "0.0.1"
+  version: "0.0.2"
   python_min: "3.11"
 
 package:
@@ -11,10 +11,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/fsvisual-${{ version }}.tar.gz
-  sha256: 6f8f9d9813c8d685ddf71d556a11a84a584b8be7e9cb6b20d5e30eedc8d8d9bc
+  sha256: 751ef8c65f6d04a8f91703b2b63ff4d10ea5a63c74094790b90446d551fb710e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
